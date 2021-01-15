@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Academic</title>
+    <title>Home</title>
     <link>chwdy.github.io/</link>
       <atom:link href="chwdy.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <description>Academic</description>
+    <description>Home</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     <image>
       <url>/chwdy.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
-      <title>Academic</title>
+      <title>Home</title>
       <link>chwdy.github.io/</link>
     </image>
     
@@ -30,6 +30,14 @@
 &lt;/ul&gt;
 &lt;p&gt;Further event details, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;page elements&lt;/a&gt; such as image galleries, can be added to the body of this page.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>MeditationWorkbook</title>
+      <link>chwdy.github.io/project/meditationworkbook/</link>
+      <pubDate>Thu, 14 Jan 2021 19:51:30 -0500</pubDate>
+      <guid>chwdy.github.io/project/meditationworkbook/</guid>
+      <description></description>
     </item>
     
     <item>

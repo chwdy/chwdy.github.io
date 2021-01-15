@@ -3,18 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>chwdy.github.io/</loc>
+    <loc>chwdy.github.io/talk/example-talk/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>chwdy.github.io/talk/example-talk/</loc>
+    <loc>chwdy.github.io/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>chwdy.github.io/event/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>chwdy.github.io/project/meditationworkbook/</loc>
+    <lastmod>2021-01-14T19:51:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>chwdy.github.io/project/</loc>
+    <lastmod>2021-01-14T19:51:30-05:00</lastmod>
   </url>
   
   <url>
@@ -34,11 +44,6 @@
   
   <url>
     <loc>chwdy.github.io/project/example/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>chwdy.github.io/project/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
@@ -120,6 +125,10 @@
   <url>
     <loc></loc>
     <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc></loc>
   </url>
   
 </urlset>
