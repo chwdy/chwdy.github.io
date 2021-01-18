@@ -248,14 +248,50 @@
 
 
 
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BHS5LKD9PH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-BHS5LKD9PH', {});
+
   
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
 
   
 
+  
+
 
   
-  
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   
 
   
@@ -414,7 +450,7 @@
 
     
     
-    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+    <div class="navbar-collapse main-menu-item collapse justify-content-center" id="navbar-content">
 
       
       <ul class="navbar-nav d-md-inline-flex">
@@ -797,9 +833,9 @@
 
         
         <h3>
-          
+          <a href="https://engineering.nyu.edu/" target="_blank" rel="noopener">
           <span>NYU Tandon school of engineering</span>
-          
+          </a>
         </h3>
         
       </div>
@@ -875,13 +911,49 @@
 <li>Programming languages : HTML, CSS, JavaScript</li>
 <li>Front End frameworks: Node.JS and ReactJS</li>
 </ul>
+<p>
+  <i class="fas fa-download  pr-1 fa-fw"></i> Download my <a href="/chwdy.github.io/Diwei_Zhu_NYU_IE_9178646724_210107-BA.pdf" target="_blank">resumé</a>.</p>
 
     </div>
 
     <div class="row">
 
       
+      <div class="col-md-5">
+        <div class="section-subheading">Interests</div>
+        <ul class="ul-interests">
+          
+          <li>Programming</li>
+          
+          <li>Analytics</li>
+          
+        </ul>
+      </div>
+      
 
+      
+      <div class="col-md-7">
+        <div class="section-subheading">Education</div>
+        <ul class="ul-edu fa-ul">
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">MS Industrial Engineering, 2019 - 2021(expected)</p>
+              <p class="institution">New York University</p>
+            </div>
+          </li>
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">Industrial Engineering, Bachelor of Buniness Administration, 2015 - 2019</p>
+              <p class="institution">Northeastern University - China</p>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
       
 
     </div>
@@ -2448,18 +2520,6 @@ Coursework : Quality Control &amp; Reliability, System Engineering, Production P
 
     
     
-    
-    <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-          }
-        });
-      }
-    </script>
     
 
     
